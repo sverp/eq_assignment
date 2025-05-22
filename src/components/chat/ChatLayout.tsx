@@ -45,7 +45,13 @@ const ChatContent = () => {
   if (!isAuthenticated) {
     return (
       <Dialog open={showAuthDialog} onOpenChange={setShowAuthDialog}>
-        <DialogContent className="sm:max-w-md" hideCloseButton={true}>
+        <DialogContent
+          className="sm:max-w-md"
+          hideCloseButton={true}
+          onInteractOutside={(event) => {
+            event.preventDefault();
+          }}
+        >
           <AuthForm onClose={() => setShowAuthDialog(false)} />
         </DialogContent>
       </Dialog>
