@@ -25,3 +25,5 @@ cd eq_server
 npm install
 node index.js
 ```
+
+https://github.com/user-attachments/assets/c83205d9-fc8c-4174-ad0a-87ab1238fc2a
